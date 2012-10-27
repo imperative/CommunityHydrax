@@ -219,10 +219,12 @@ namespace Hydrax{namespace Module
 			if (getNormalMode() == MaterialManager::NM_VERTEX)
 			{
 				delete [] static_cast<Mesh::POS_NORM_VERTEX*>(mVertices);
+				mVertices = 0;
 			}
 			else if (getNormalMode() == MaterialManager::NM_RTT)
 			{
 				delete [] static_cast<Mesh::POS_VERTEX*>(mVertices);
+				mVertices = 0;
 			}
 		}
 
