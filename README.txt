@@ -1,6 +1,10 @@
 README file for Hydrax 0.5.4 (by Jose Luis Cercós Pita & Naëm Baron)
 Hydrax is an completely free add-on for Ogre which aim is to provide an easy-use library in order to render pretty water scenes. Written by Xavier Verguin, has contributed Jose Luis Cercós and Naëm Baron.
 
+For current documentation please use Ogre Wiki:
+Main project page:
+http://www.ogre3d.org/tikiwiki/Hydrax
+
 --- Linux users ---------------------------
 
 You can use the makefile. Simply execute the commands
