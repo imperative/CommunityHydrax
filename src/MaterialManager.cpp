@@ -729,11 +729,7 @@ namespace Hydrax
 						}
 
 						FragmentProgramData +=
-                                #if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
-                                    "uniform sampler1D    uFresnelMap      : register(s" + Ogre::StringConverter::toString(TexNum) + ")";
-								#else
                                     "uniform sampler2D    uFresnelMap      : register(s" + Ogre::StringConverter::toString(TexNum) + ")";
-                                #endif
 						TexNum++;
 
 						if (cFoam)
@@ -794,11 +790,9 @@ namespace Hydrax
 						FragmentProgramData +=
 							Ogre::String(
 								"dotProduct=saturate(dotProduct);\n") +
-								#if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
-                                    "float fresnel = tex1D(uFresnelMap,dotProduct);\n" +
-                                #else
-                                    "float fresnel = tex2D(uFresnelMap,float2(dotProduct,dotProduct));\n" +
-                                #endif
+								
+                                "float fresnel = tex2D(uFresnelMap,float2(dotProduct,dotProduct));\n" +
+								
 								// Add additional reflection and saturate
 								"fresnel+=additionalReflection;\n" +
 								"fresnel=saturate(fresnel);\n" +
@@ -2215,11 +2209,7 @@ namespace Hydrax
                                 }
 
                                 FragmentProgramData +=
-                                #if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
-                                    "uniform sampler1D    uFresnelMap      : register(s" + Ogre::StringConverter::toString(TexNum) + ")";
-                                #else
                                     "uniform sampler2D    uFresnelMap      : register(s" + Ogre::StringConverter::toString(TexNum) + ")";
-                                #endif
                                 TexNum++;
 
                                 /* Foam is not visible underwater
@@ -2282,11 +2272,7 @@ namespace Hydrax
                                 }
                                 FragmentProgramData += Ogre::String(
 								"dotProduct=saturate(dotProduct);\n") +
-								#if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
-                                    "float fresnel = tex1D(uFresnelMap,dotProduct);\n" +
-                                #else
                                     "float fresnel = tex2D(uFresnelMap,float2(dotProduct,dotProduct));\n" +
-                                #endif
 								// Add additional reflection and saturate
 								"fresnel+=additionalReflection;\n" +
 								"fresnel=saturate(fresnel);\n" +
