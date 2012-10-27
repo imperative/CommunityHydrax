@@ -823,15 +823,32 @@ namespace Hydrax
 
 		Ogre::ColourValue WC = Ogre::ColourValue(WaterColor.x, WaterColor.y, WaterColor.z);
 
+		Ogre::TexturePtr tex;
 		if (isComponent(HYDRAX_COMPONENT_UNDERWATER_REFLECTIONS) || !_isCurrentFrameUnderwater())
 		{
+			/* Fix from http://www.ogre3d.org/addonforums/viewtopic.php?f=20&t=10925 
 			mRttManager->getTexture(RttManager::RTT_REFLECTION)->
 				 getBuffer()->getRenderTarget()->getViewport(0)->
 					 setBackgroundColour(WC);
+			*/
+			tex = mRttManager->getTexture(RttManager::RTT_REFLECTION);
+			if(!tex.isNull()) 
+			{
+				tex->getBuffer()->getRenderTarget()->getViewport(0)->setBackgroundColour(WC);
+				tex.setNull();
+			}
 		}
+		/* Fix from http://www.ogre3d.org/addonforums/viewtopic.php?f=20&t=10925 
 	    mRttManager->getTexture(RttManager::RTT_REFRACTION)->
 			getBuffer()->getRenderTarget()->getViewport(0)->
 				 setBackgroundColour(WC);
+		*/
+		tex = mRttManager->getTexture(RttManager::RTT_REFRACTION);
+        if(!tex.isNull()) 
+		{
+            tex->getBuffer()->getRenderTarget()->getViewport(0)->setBackgroundColour(WC);
+			tex.setNull();
+		}
 
 		if (!isComponent(HYDRAX_COMPONENT_DEPTH))
         {

@@ -149,6 +149,10 @@ namespace Hydrax
 		if (Ogre::MaterialManager::getSingleton().resourceExists(_def_Underwater_Compositor_Material_Name))
 		{
 			setCompositorEnable(COMP_UNDERWATER, false);
+			
+			// Fix from http://www.ogre3d.org/addonforums/viewtopic.php?f=20&t=10925
+			Ogre::CompositorManager::getSingleton().removeCompositor(mHydrax->getViewport(), _def_Underwater_Compositor_Name);
+			
 			Ogre::CompositorManager::getSingleton().remove(_def_Underwater_Compositor_Name);
 
 			Ogre::MaterialManager::getSingleton().remove(_def_Underwater_Compositor_Material_Name);
