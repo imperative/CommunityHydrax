@@ -1,0 +1,27 @@
+Source: libhydrax
+Priority: extra
+Maintainer: Sanguinario_Joe <lacigarracomunista@gmail.com>
+Build-Depends: debhelper (>= 7), libogre-dev (>= 1.6.4)
+Standards-Version: 3.8.3
+Section: libs
+Homepage:
+
+Package: libhydrax-dev
+Section: libdevel
+Architecture: any
+Depends: libhydrax (= ${binary:Version}), libogre-dev (>= 1.6.4)
+Conflicts: libssshydrax-dev, libssshydrax, libhydrax-dev(<< 0.5.4), hydrax-demo(<< 0.5.4), libhydrax(<< 0.5.4)
+Replaces: libssshydrax, libssshydrax-dev, libhydrax(<< 0.5.4), hydrax-demo(<< 0.5.4), libhydrax-dev(<< 0.5.4)
+Description: Hydrax is a plugin for OGRE to could use Water/Ocean.
+ Hydrax is a plugin for OGRE (Object-oriented Graphic Render Engine) to could use Water/Ocean environments.
+ This package contains all developer files.
+
+Package: libhydrax
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogremain-1.6.4 (>= 1.6.4)
+Conflicts: libssshydrax-dev, libssshydrax, libhydrax-dev(<< 0.5.4), hydrax-demo(<< 0.5.4), libhydrax(<< 0.5.4)
+Replaces: libssshydrax, libssshydrax-dev, libhydrax(<< 0.5.4), hydrax-demo(<< 0.5.4), libhydrax-dev(<< 0.5.4)
+Description: Hydrax is a plugin for OGRE to could use Water/Ocean.
+ Hydrax is a plugin for OGRE (Object-oriented Graphic Render Engine) to could use Water/Ocean environments.
+

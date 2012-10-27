@@ -1,0 +1,5 @@
+libhydrax (0.5.4-5) natty; urgency=low
+
+  * Fixed OGRE dependency.
+
+ -- Sanguinario_Joe <jlcercos@gmail.com>  Sun, 27 Mar 2011 11:46:00 +0200

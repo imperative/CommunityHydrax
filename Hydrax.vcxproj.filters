@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{39983a7d-fadf-445c-a875-16903132dd5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6ee741bf-9401-47fa-9201-5402b8a42ddf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Modules">
+      <UniqueIdentifier>{b9cc0ef9-9f25-4dda-a956-07ed06826b01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Noise">
+      <UniqueIdentifier>{759daf38-8c76-4c31-bb7d-6e6fc447a1c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Noise\Real">
+      <UniqueIdentifier>{a17a31af-5923-4c1a-a34f-b7aaf564f346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Noise\Perlin">
+      <UniqueIdentifier>{28235b72-0ccb-4be5-aecd-8917b3d0f6f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Noise\FFT">
+      <UniqueIdentifier>{86b4857d-92bd-47c3-82c1-75a52107ba92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Modules">
+      <UniqueIdentifier>{f8d294d6-3093-42c0-81ac-589cbad32ac8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Noise">
+      <UniqueIdentifier>{183e6a0d-67a1-4619-9a21-7538bca2de02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Noise\FFT">
+      <UniqueIdentifier>{7e8ad60a-72a9-457f-8a45-a3c233006352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Noise\Perlin">
+      <UniqueIdentifier>{f5865696-1971-43ce-ab15-45e7320b497c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Noise\Real">
+      <UniqueIdentifier>{f20ae07f-139b-45aa-b6d1-1fabb335974b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Modules\ProjectedGrid">
+      <UniqueIdentifier>{dc88cb1d-5171-42d0-a24b-b5597c3bfedf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Modules\RadialGrid">
+      <UniqueIdentifier>{943084b1-040a-4be5-8c16-ee0ecb7803f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Modules\SimpleGrid">
+      <UniqueIdentifier>{d9dcb269-dcf8-4e61-9f61-e4335e0a115b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Modules\SimpleGrid">
+      <UniqueIdentifier>{01e36817-98e1-4185-bd9e-c81a0ef104ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Modules\ProjectedGrid">
+      <UniqueIdentifier>{df8cc249-62d7-4e98-bd56-ae33ee4388b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Modules\RadialGrid">
+      <UniqueIdentifier>{8abe1f39-2c84-423f-8e86-22df0995da90}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CfgFileManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecalsManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Enums.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GodRaysManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GPUNormalMapManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Help.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hydrax.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MaterialManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Prerequisites.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RttManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextureManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Modules\Module.cpp">
+      <Filter>Source Files\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Modules\SimpleGrid\SimpleGrid.cpp">
+      <Filter>Source Files\Modules\SimpleGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Modules\RadialGrid\RadialGrid.cpp">
+      <Filter>Source Files\Modules\RadialGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Modules\ProjectedGrid\ProjectedGrid.cpp">
+      <Filter>Source Files\Modules\ProjectedGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Noise\Noise.cpp">
+      <Filter>Source Files\Noise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Noise\Real\PressurePoint.cpp">
+      <Filter>Source Files\Noise\Real</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Noise\Real\Real.cpp">
+      <Filter>Source Files\Noise\Real</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Noise\Real\Wave.cpp">
+      <Filter>Source Files\Noise\Real</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Noise\Perlin\Perlin.cpp">
+      <Filter>Source Files\Noise\Perlin</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Noise\FFT\FFT.cpp">
+      <Filter>Source Files\Noise\FFT</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\CfgFileManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DecalsManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Enums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GodRaysManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GPUNormalMapManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Help.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Hydrax.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MaterialManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Prerequisites.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RttManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TextureManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Noise\Noise.h">
+      <Filter>Header Files\Noise</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Noise\Real\PressurePoint.h">
+      <Filter>Header Files\Noise\Real</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Noise\Real\Real.h">
+      <Filter>Header Files\Noise\Real</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Noise\Real\Wave.h">
+      <Filter>Header Files\Noise\Real</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Noise\Perlin\Perlin.h">
+      <Filter>Header Files\Noise\Perlin</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Noise\FFT\FFT.h">
+      <Filter>Header Files\Noise\FFT</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Modules\Module.h">
+      <Filter>Header Files\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Modules\SimpleGrid\SimpleGrid.h">
+      <Filter>Header Files\Modules\SimpleGrid</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Modules\ProjectedGrid\ProjectedGrid.h">
+      <Filter>Header Files\Modules\ProjectedGrid</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Modules\RadialGrid\RadialGrid.h">
+      <Filter>Header Files\Modules\RadialGrid</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe_to_build.txt" />
+  </ItemGroup>
+</Project>

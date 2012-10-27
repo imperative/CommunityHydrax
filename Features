@@ -1,0 +1,18 @@
+--- Hydrax-0.5.4 --------------------------------
+* Added Microsoft VS2010 project (Naëm Baron).
+* Fixed some GLSL shaders.
+* Fixed CG/HLSL shaders (not tested in previous version).
+--- Hydrax-0.5.3 --------------------------------
+* Now Hydrax supports OGRE 1.7.X "our of the box" (not tested).
+* Global transparency add water colour to the objects viewed trought the free surface.
+* Created new noise called "Real". At now, "Real" is composed by...
+ - Perlin noise (same released in previous versions of Hydrax)
+ - Sea waves (That must be added at code, 3 is sufficient to most cases).
+ - Pressure points (IDEM)
+* Now, underwater scattering increases with distance, not only with depth.
+ - If the point viewed is at the other side of the free surface, scattering effect
+   is limited to water environment.
+* HLSL/CG shaders have been traslated to use all new functionality (not tested).
+
+--- Hydrax-0.5.2 --------------------------------
+* Added GLSL shaders support.

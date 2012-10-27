@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Hydrax" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/libhydrax" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="lib/Debug" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="OgreMain_d" />
+					<Add directory="lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/libhydrax" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="lib/Release" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="OgreMain" />
+					<Add directory="lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-I/usr/include/OGRE" />
+			<Add option="-I/home/Ogre-Engine/Samples/Common/include" />
+			<Add option="-I./" />
+			<Add option="-I./include" />
+			<Add option="-I/usr/include/CEGUI" />
+			<Add option="-fmessage-length=0" />
+			<Add option="-fexceptions" />
+			<Add option="-fident" />
+			<Add option="-D__VERBOSE__" />
+			<Add directory="$(OGRE_HOME_MINGW)/include" />
+			<Add directory="$(OGRE_HOME_MINGW)/samples/include" />
+			<Add directory="$(OGRE_HOME_MINGW)/samples/refapp/include" />
+			<Add directory="include/Hydrax" />
+		</Compiler>
+		<Linker>
+			<Add library="ogg" />
+			<Add library="vorbis" />
+			<Add library="vorbisenc" />
+			<Add library="vorbisfile" />
+			<Add library="tinyxml" />
+			<Add directory="$(OGRE_HOME_MINGW)/lib" />
+			<Add directory="$(OGRE_HOME_MINGW)/bin/Debug" />
+			<Add directory="$(OGRE_HOME_MINGW)/bin/Release" />
+			<Add directory="../bin/$(TARGET_NAME)" />
+		</Linker>
+		<Unit filename="include/CfgFileManager.h" />
+		<Unit filename="include/DecalsManager.h" />
+		<Unit filename="include/Enums.h" />
+		<Unit filename="include/GPUNormalMapManager.h" />
+		<Unit filename="include/GodRaysManager.h" />
+		<Unit filename="include/Help.h" />
+		<Unit filename="include/Hydrax.h" />
+		<Unit filename="include/Image.h" />
+		<Unit filename="include/MaterialManager.h" />
+		<Unit filename="include/Mesh.h" />
+		<Unit filename="include/Modules/Module.h" />
+		<Unit filename="include/Modules/ProjectedGrid/ProjectedGrid.h" />
+		<Unit filename="include/Modules/RadialGrid/RadialGrid.h" />
+		<Unit filename="include/Modules/SimpleGrid/SimpleGrid.h" />
+		<Unit filename="include/Noise/FFT/FFT.h" />
+		<Unit filename="include/Noise/Noise.h" />
+		<Unit filename="include/Noise/Perlin/Perlin.h" />
+		<Unit filename="include/Noise/Real/PressurePoint.h" />
+		<Unit filename="include/Noise/Real/Real.h" />
+		<Unit filename="include/Noise/Real/Wave.h" />
+		<Unit filename="include/Prerequisites.h" />
+		<Unit filename="include/RttManager.h" />
+		<Unit filename="include/TextureManager.h" />
+		<Unit filename="src/CfgFileManager.cpp" />
+		<Unit filename="src/DecalsManager.cpp" />
+		<Unit filename="src/Enums.cpp" />
+		<Unit filename="src/GPUNormalMapManager.cpp" />
+		<Unit filename="src/GodRaysManager.cpp" />
+		<Unit filename="src/Help.cpp" />
+		<Unit filename="src/Hydrax.cpp" />
+		<Unit filename="src/Image.cpp" />
+		<Unit filename="src/MaterialManager.cpp" />
+		<Unit filename="src/Mesh.cpp" />
+		<Unit filename="src/Modules/Module.cpp" />
+		<Unit filename="src/Modules/ProjectedGrid/ProjectedGrid.cpp" />
+		<Unit filename="src/Modules/RadialGrid/RadialGrid.cpp" />
+		<Unit filename="src/Modules/SimpleGrid/SimpleGrid.cpp" />
+		<Unit filename="src/Noise/FFT/FFT.cpp" />
+		<Unit filename="src/Noise/Noise.cpp" />
+		<Unit filename="src/Noise/Perlin/Perlin.cpp" />
+		<Unit filename="src/Noise/Real/PressurePoint.cpp" />
+		<Unit filename="src/Noise/Real/Real.cpp" />
+		<Unit filename="src/Noise/Real/Wave.cpp" />
+		<Unit filename="src/Prerequisites.cpp" />
+		<Unit filename="src/RttManager.cpp" />
+		<Unit filename="src/TextureManager.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
